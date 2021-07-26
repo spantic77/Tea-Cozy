@@ -1,0 +1,425 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+/* ----- Headers ----- */
+
+h2,
+h3,
+h4,
+h5 {
+    color: seashell;
+}
+
+/* ----- Header section ----- */
+
+header {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin: 0 10px;
+    position: relative;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+
+/* ----- Main navigation ----- */
+
+.topnav {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.topnav li { margin-left: 20px; }
+
+.topnav li a:link,
+.topnav li a:visited {
+    color: seashell;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+    background-color: #000;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.topnav li a:hover,
+.topnav li a:active {
+    color: #000;
+    background-color: seashell;
+}
+
+
+/* ----- Mobile navigation ----- */
+
+.mobile-nav-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 120%;
+    color: seashell;
+    margin-right: 20px;
+}
+
+
+/* ----- Mission section ----- */
+
+.mission {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95.24%;
+    height: 700px;
+    background-image: url(../Images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 2.4%;
+}
+
+.mission-text {
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+.mission-text h2,
+.mission-text h4 {
+    margin: 10px 0;
+}
+
+/* ----- Tea of the Month section ----- */
+
+.month {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.month-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.month-text h2,
+.month-text h4 {
+    margin: 10px 0;
+}
+
+.month-images {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.img-container {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.img-container p { margin: 0 0 10px 0; }
+
+/* ----- Locations section ----- */
+
+.locations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-image: url(../Images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 95.24%;
+    height: 500px;
+    margin-left: 2.4%;
+    margin-top: 20px;
+}
+
+.locations-adr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    opacity: 0.8;
+}
+
+.location-adr-text {
+    background-color: #000;
+    opacity: 1;
+    width: 300px;
+    margin: 20px 20px;
+}
+
+.location-adr-text h3,
+.location-adr-text p {
+    display: block;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+/* ----- Footer section ----- */
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    height: 200px;
+}
+
+.copyright {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+
+/* ----------------------------------------- */
+/* Media queries */
+/* ----------------------------------------- */
+
+/* Width below 1230px */
+
+@media only screen and (max-width: 1230px) {
+    .container { width: 95%; }
+
+    .img-container { margin: 10px; }
+}
+
+/* Width below 1144px */
+
+@media only screen and (max-width: 1144px) {
+    .location-adr-text {
+        margin: 15px 15px;
+        width: 250px;
+    }
+}
+
+/* Width below 1070px */
+
+@media only screen and (max-width: 1070px) {
+    .location-adr-text h3,
+    .location-adr-text p {
+        display: block;
+        margin: 20px 10px;
+        text-align: center;
+    }
+}
+
+/* Width below 945px */
+
+@media only screen and (max-width: 945px) {
+    .locations { height: 600px; }
+}
+
+/* Width below 809px */
+
+@media only screen and (max-width: 809px) {
+    .container { width: 100%; }
+
+    .topnav li { margin-left: 15px; }
+    
+    .img-container { width: 80%; }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Width below 635px */
+
+@media only screen and (max-width: 635px) {
+    .container { width: 100%; }
+
+    .mission { height: 500px; }
+
+    .location-adr-text {
+        margin: 10px 10px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .topnav { display: none; }
+
+    .main-nav.responsive {
+        /*max-width: 40%;*/
+        width: 100%;
+        margin-top: 95px;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+        float: right;
+    }
+
+    .topnav.responsive {
+        display: block;
+        float: left;
+        opacity: 0.7;
+    }
+
+    .topnav.responsive li a:link,
+    .topnav.responsive li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 10px;
+        font-size: 90%;
+    }
+
+/* Width below 613px */
+
+@media only screen and (max-width: 613px) {
+    .img-container { margin: 10px auto; }
+
+    .location-adr-text h3,
+    .location-adr-text p {
+        margin: 10px 10px;
+        font-size: 20px;
+    }
+
+    .copyright { margin-bottom: 10px; }
+
+    .copyright p { font-size: 16px; }
+}
+
+
+/* Width below 412px */
+
+@media only screen and (max-width: 412px) {
+    .topnav.responsive li a:link,
+    .topnav.responsive li a:visited {
+        font-size: 80%;
+    }
+
+    .mobile-nav-icon i { font-size: 120%; }
+}
+
+/* Width below 372px */
+
+@media only screen and (max-width: 372px) {
+    .topnav.responsive li a:link,
+    .topnav.responsive li a:visited {
+        font-size: 70%;
+    }
+}
+
+
+/* Width below 360px */
+
+@media only screen and (max-width: 360px) {
+    body { font-size: 18px; }
+
+    .logo {
+        margin: 0;
+        height: 45px;
+    }
+
+    .topnav.responsive li a:link,
+    .topnav.responsive li a:visited {
+        font-size: 100%;
+    }
+
+    .main-nav.responsive { margin-top: 90px; }
+
+    .mobile-nav-icon i { font-size: 150%; }
+
+    .mission { height: 400px; }
+
+    .location-adr-text { width: 250px; }
+}
+}
